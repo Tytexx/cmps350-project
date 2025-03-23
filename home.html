@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QU Student Management System - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="images/QU Logo.png" alt="Qatar University Logo" class="small-logo">
+            <h1>CSE Student Management</h1>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <span>Welcome, <strong>Mohammed</strong></span>
+                <span class="user-role">[Student]</span>
+            </div>
+            <button class="btn btn-logout">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fas fa-book"></i> My Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fas fa-graduation-cap"></i> Learning Path</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="search-section">
+                <h2>Available Courses</h2>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="course-search" placeholder="Search for courses...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-container">
+                        <label for="category-filter">Filter by:</label>
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="programming">Programming</option>
+                            <option value="database">Databases</option>
+                            <option value="networks">Networks</option>
+                            <option value="ai">Artificial Intelligence</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>CMPS 251</h3>
+                        <span class="course-category">Programming</span>
+                    </div>
+                    <div class="course-content">
+                        <h4>Object-Oriented Programming</h4>
+                        <p>Introduction to object-oriented concepts, design, and programming.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> Dr. Aman Ali</span>
+                            <span><i class="fas fa-users"></i> 25/30 Enrolled</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>CMPS 303</h3>
+                        <span class="course-category">Database</span>
+                    </div>
+                    <div class="course-content">
+                        <h4>Database Management Systems</h4>
+                        <p>Fundamentals of database systems, relational databases, SQL, and normalization.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> Dr. Mishal Mohammed</span>
+                            <span><i class="fas fa-users"></i> 18/30 Enrolled</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>CMPS 350</h3>
+                        <span class="course-category">Programming</span>
+                    </div>
+                    <div class="course-content">
+                        <h4>Web Development</h4>
+                        <p>Front-end and back-end development, responsive design, and web services.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> Dr. Ameen Mansour</span>
+                            <span><i class="fas fa-users"></i> 28/30 Enrolled</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-disabled" disabled>Class Full</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>CMPS 356</h3>
+                        <span class="course-category">Programming</span>
+                    </div>
+                    <div class="course-content">
+                        <h4>Software Development</h4>
+                        <p>Software development methodologies, testing, and project management.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> Dr. Mohammed Sherin</span>
+                            <span><i class="fas fa-users"></i> 15/30 Enrolled</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="pagination">
+                <button class="btn-page"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn-page active">1</button>
+                <button class="btn-page">2</button>
+                <button class="btn-page">3</button>
+                <button class="btn-page"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Qatar University - CSE Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
