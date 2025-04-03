@@ -1,4 +1,9 @@
 /* Global Styles */
+
+*{
+  border: 1px solid black;
+}
+
 :root {
   --primary-color: #70193d; /* QU primary color (maroon) */
   --secondary-color: #6c5b7b;
@@ -314,6 +319,13 @@ body {
   overflow: hidden;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
+}
+
+.extended-course-card{
+  position: absolute;
+  width: auto;
+  padding: 200px;
+
 }
 
 .course-card:hover {
