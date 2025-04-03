@@ -15,7 +15,7 @@ Each course in the curriculum is represented as a JSON object with the following
 | `category` | String | Course category/subject area |
 | `prerequisites` | Array | List of course IDs that must be completed before taking this course |
 | `description` | String | Detailed course description |
-| `status` | String | Current course status ("open", "closed", "archived") |
+| `status` | String | Current course status ("Open", "Closed") |
 | `registrationOpen` | Boolean | Whether registration is currently available |
 | `instructor` | String | Name of the course instructor |
 | `enrolled` | Number | Current number of enrolled students |

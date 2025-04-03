@@ -7,10 +7,9 @@
     "category": "Programming",
     "prerequisites": [],
     "description": "Learn to write code that works 60% of the time, every time! Covers basic programming concepts, data structures, and problem-solving with Python.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 42
+    "enrolled": 20
   },
   {
     "id": "02102",
@@ -20,10 +19,9 @@
     "category": "Mathematics",
     "prerequisites": [],
     "description": "Discover exciting theorems that will haunt your dreams for years. Covers logic, sets, relations, functions, combinatorics, and graph theory.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 38
+    "enrolled": 15
   },
   {
     "id": "03103",
@@ -33,10 +31,9 @@
     "category": "Systems",
     "prerequisites": [],
     "description": "Learn why your fancy gaming PC still can't handle Chrome with 3 tabs open. Introduction to digital logic, assembly, and computer organization.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 35
+    "enrolled": 20 
   },
   {
     "id": "04104",
@@ -46,10 +43,9 @@
     "category": "Web & Data",
     "prerequisites": [],
     "description": "HTML: Where forgetting one bracket ruins your entire day. Covers HTML, CSS, JavaScript basics, and responsive design.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 45
+    "enrolled": 20
   },
   {
     "id": "04105",
@@ -59,10 +55,9 @@
     "category": "Web & Data",
     "prerequisites": [],
     "description": "Learn to nod confidently when someone mentions 'correlation vs. causation'. Covers data analysis, visualization, and basic statistical concepts.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 36
+    "enrolled": 10
   },
   {
     "id": "01201",
@@ -72,7 +67,6 @@
     "category": "Programming",
     "prerequisites": ["01101", "02102"],
     "description": "Learn sorting algorithms you'll never implement manually again thanks to libraries. Advanced data structures, algorithm design and analysis.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 30
@@ -85,10 +79,9 @@
     "category": "Web & Data",
     "prerequisites": ["01101"],
     "description": "Learn the true meaning of 'foreign key constraint violation' at 3 AM. Relational database design, SQL, and database management.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 32
+    "enrolled": 14
   },
   {
     "id": "01203",
@@ -98,7 +91,6 @@
     "category": "Programming",
     "prerequisites": ["01101"],
     "description": "Master inheritance hierarchies so deep they'll give you existential crises. OOP concepts, design patterns, and software architecture.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 28
@@ -111,10 +103,9 @@
     "category": "AI & Advanced Tech",
     "prerequisites": ["01101", "04105"],
     "description": "Learn to craft prompts that produce anything but what you actually want. Fundamentals of AI, LLM concepts, and effective prompt engineering.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
-    "enrolled": 40
+    "enrolled": 17
   },
   {
     "id": "03205",
@@ -124,7 +115,6 @@
     "category": "Systems",
     "prerequisites": ["01101", "03103"],
     "description": "Study deadlocks by experiencing them in your own brain. Process management, memory allocation, file systems, and security.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 26
@@ -137,7 +127,6 @@
     "category": "Software Engineering",
     "prerequisites": ["01201", "01203"],
     "description": "Learn that 'agile' just means 'changing everything every two days'. Project management, requirements, testing, and development methodologies.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 25
@@ -150,10 +139,9 @@
     "category": "Web & Data",
     "prerequisites": ["04104", "04202"],
     "description": "Master the art of StackOverflow-driven development. Modern frameworks, APIs, authentication, and deployment.",
-    "status": "open",
     "registrationOpen": true,
-    "instructor": "Prof. Node Package",
-    "enrolled": 35
+    "instructor": "",
+    "enrolled": 16
   },
   {
     "id": "03303",
@@ -163,7 +151,6 @@
     "category": "Systems",
     "prerequisites": ["04202", "03205"],
     "description": "Learn what 'the cloud' is beyond 'someone else's computer'. Virtualization, containerization, and microservices architecture.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 30
@@ -176,7 +163,6 @@
     "category": "AI & Advanced Tech",
     "prerequisites": ["02102", "01201", "05204"],
     "description": "Create models that are wrong in fascinating and unpredictable ways. Supervised/unsupervised learning, model evaluation, and practical applications.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 28
@@ -189,7 +175,6 @@
     "category": "Systems",
     "prerequisites": ["03103", "03205"],
     "description": "OSI model: Seven layers of problems you can blame when things go wrong. Network protocols, architecture, security, and distributed systems.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 24
@@ -202,7 +187,6 @@
     "category": "Systems",
     "prerequisites": ["03205", "03305"],
     "description": "Learn why you should never use public Wi-Fi or click on emails from 'princes'. Threat modeling, encryption, ethical hacking, and security protocols.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 22
@@ -215,7 +199,6 @@
     "category": "Software Engineering",
     "prerequisites": ["06301", "03303"],
     "description": "Master the art of breaking production environments in new and exciting ways. CI/CD pipelines, infrastructure as code, monitoring, and automation.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 20
@@ -228,7 +211,6 @@
     "category": "AI & Advanced Tech",
     "prerequisites": ["05204", "05304"],
     "description": "Learn to build AIs that are just smart enough to be useful but not enough to revolt. Computer vision, NLP, reinforcement learning, and ethical considerations.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 25
@@ -241,7 +223,6 @@
     "category": "Software Engineering",
     "prerequisites": ["06301", "04302"],
     "description": "Create something impressive enough for your portfolio but simple enough to finish. Year-long hands-on project integrating multiple technologies.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 18
@@ -254,7 +235,6 @@
     "category": "AI & Advanced Tech",
     "prerequisites": [],
     "description": "Study cutting-edge tech that will be replaced by something better before you master it. Quantum computing, blockchain, edge computing, and future trends.",
-    "status": "open",
     "registrationOpen": true,
     "instructor": "",
     "enrolled": 30

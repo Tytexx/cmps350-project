@@ -51,7 +51,7 @@ async function start(){
     courseList.forEach(course => courseGrid.innerHTML += `
                     <div class="course-card">
                     <div class="course-header">
-                        <h3>${course.id}</h3>
+                        <h3>${course.code}</h3>
                         <span class="course-category">${course.category}</span>
                     </div>
                     <div class="course-content">
@@ -62,7 +62,7 @@ async function start(){
                             <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
                         </div>
                         <div class="course-details">
-                            <span><i class="fas fa-clock"></i> ${course.status}</span>
+                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'}</span>
                         </div>
                         
                     </div>
@@ -92,8 +92,8 @@ function showDiv(course){
                             <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
                         </div>
                         <div class="course-details">
-                            <span><i class="fas fa-user"></i> Credit : ${course.credits}</span>
-                            <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
+                            <span><i class="fas fa-hourglass-start"></i> Credit : ${course.credits}</span>
+                            <span><i class="fas fa-book-open"></i> Pre-requisites :  ${course.prerequisites.length != 0? course.prerequisites : "None"}</span>
                         </div>
                     </div>
                     <div class="course-footer">
