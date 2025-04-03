@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QU Student Management System - Learning Path</title>
+    <link rel="stylesheet" href="css/learningpath.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="images/QU Logo.png" alt="Qatar University Logo" class="small-logo">
+            <h1>CSE Student Management</h1>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <span>Welcome, <strong id="student-name">Mohammed</strong></span>
+                <span class="user-role">[Student]</span>
+            </div>
+            <button class="btn btn-logout">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fas fa-book"></i> My Courses</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="learning-path.html"><i class="fas fa-graduation-cap"></i> Learning Path</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="path-section">
+                <h2>My Learning Path</h2>
+                <p class="path-desc">Your progress through the Computer Science program. Hover over course names to see
+                    details.</p>
+
+                <div class="learning-legend">
+                    <div class="learning-status">
+                        <span class="status-indicator completed"></span>
+                        <span>Completed</span>
+                    </div>
+                    <div class="learning-status">
+                        <span class="status-indicator in-progress"></span>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="learning-status">
+                        <span class="status-indicator pending"></span>
+                        <span>Pending</span>
+                    </div>
+                </div>
+
+                <div class="learning-path-container">
+                    <div class="course-details-container" id="course-details-container">
+                        <div class="panel-placeholder">
+                            Place for inserting
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-summary">
+                    <div class="summary-card">
+                        <h3>Program Progress</h3>
+                        <div class="progress-container">
+                        </div>
+                        <div class="progress-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Completed Courses:</span>
+                                <span class="stat-value" id="completed-courses">9/41</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Credits Earned:</span>
+                                <span class="stat-value" id="credits-earned">36/120</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Current GPA:</span>
+                                <span class="stat-value" id="current-gpa">3.75</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <h3>Current Semester</h3>
+                        <div class="current-courses" id="current-courses">
+                            <div class="semester-course">
+                                <span class="course-code">CMPS 350</span>
+                                <span class="course-name">Web Development</span>
+                                <span class="course-status in-progress">In Progress</span>
+                            </div>
+                            <div class="semester-course">
+                                <span class="course-code">CMPS 351</span>
+                                <span class="course-name">Fundamentals of Database</span>
+                                <span class="course-status in-progress">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Qatar University - CSE Department. All rights reserved.</p>
+    </footer>
+
+    <script src="js/learning-path.js"></script>
+</body>
+
+</html>
