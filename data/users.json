@@ -1,0 +1,252 @@
+[
+    {
+        "username": "Ayman",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Yasin",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Malik",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Jamil",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Fayez",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Noura",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Malik",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Khalil",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Khalid",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Zaynab",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Samira",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Mariam",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Maya",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Alaa",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Aisha",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Omar",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Sami",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Samira",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Musa",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Tariq",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Ali",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Zain",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Samira",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Aisha",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Sara",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Yusuf",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Sami",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Jameela",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Lina",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Zaynab",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Noura",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Maya",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Sara",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Zaynab",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Ahmed",
+        "password": "password123",
+        "role": "student"
+    },
+    {
+        "username": "Ali",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Ali",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Khalil",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Hassan",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Samira",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Salma",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Zain",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Khalid",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Huda",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Zaynab",
+        "password": "password123",
+        "role": "instructor"
+    },
+    {
+        "username": "Fayez",
+        "password": "password123",
+        "role": "administrator"
+    },
+    {
+        "username": "Samira",
+        "password": "password123",
+        "role": "administrator"
+    },
+    {
+        "username": "Musa",
+        "password": "password123",
+        "role": "administrator"
+    },
+    {
+        "username": "Maya",
+        "password": "password123",
+        "role": "administrator"
+    },
+    {
+        "username": "Zahra",
+        "password": "password123",
+        "role": "administrator"
+    }
+]
