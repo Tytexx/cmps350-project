@@ -1,19 +1,13 @@
 const BASE_URL = 'http://127.0.0.1:3000/cmps350-project/home.html'
 
 document.addEventListener("DOMContentLoaded",start)
-let selectedCourse = ''
 
-async function start(){
-    console.log("Fetching works");  
-    const response = await fetch(BASE_URL);
-    const datas = await response.json();
 
-    if (!localStorage.getItem("storedData")) {
-        localStorage.setItem("storedData", JSON.stringify(datas));  
-    }
-    storedData = localStorage.getItem("storedData");
-
-    handleChangingElements();
+async function fetchData(){
+    const courses = await fetch("../data/courses.json");
+    let courseList = await courses.json();
+    localStorage.courses = JSON.stringify(courseList);
+    start()
 }
 
 
@@ -45,10 +39,9 @@ async function start(){
 const courseGrid = document.querySelector(".courses-grid")
 
 async function start(){
-    const courses = await fetch("../data/courses.json");
-    courseList = await courses.json();
+
     const courseGrid = document.querySelector(".courses-grid")
-    courseList.forEach(course => courseGrid.innerHTML += `
+    JSON.parse(localStorage.courses).forEach(course => courseGrid.innerHTML += `
                     <div class="course-card">
                     <div class="course-header">
                         <h3>${course.code}</h3>
@@ -71,21 +64,23 @@ async function start(){
                         class="btn btn-secondary">View Details</button>
                         <button class="btn btn-primary">Register</button>
                     </div>
-                </div>` )      
+                </div>`
+            )      
                           
 }
 
 function showDiv(course){
+    // Show details won't work for now because the course names are too
     courseGrid.innerHTML = `
                 <div class="extended-course-card">
                     <div class="course-header">
-                        <h3>${course.id}</h3>
+                        <h3>${course.code}</h3>
                         <span class="course-category">${course.category}</span>
                     </div>
                     <div class="course-content">
                         <h4>${course.name}</h4>
                         <p>${course.description}</p>
-                        <p>${course.extraDescription}</p>
+                        <!-- <p>${course.extraDescription}</p> -->
 
                         <div class="course-details">
                             <span><i class="fas fa-user"></i> ${course.instructor}</span>
@@ -97,7 +92,6 @@ function showDiv(course){
                         </div>
                     </div>
                     <div class="course-footer">
-                        <button onclick="showDiv()" class="btn btn-secondary">View Details</button>
                         <button class="btn btn-primary">Register</button>
                     </div>
                 </div>`
