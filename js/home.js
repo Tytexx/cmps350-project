@@ -45,7 +45,7 @@ async function start(){
 const courseGrid = document.querySelector(".courses-grid")
 
 async function start(){
-    const courses = await fetch("../data/courses2.json");
+    const courses = await fetch("../data/courses.json");
     courseList = await courses.json();
     const courseGrid = document.querySelector(".courses-grid")
     courseList.forEach(course => courseGrid.innerHTML += `
@@ -77,7 +77,7 @@ async function start(){
 
 function showDiv(course){
     courseGrid.innerHTML = `
-                    <div class="extended-course-card">
+                <div class="extended-course-card">
                     <div class="course-header">
                         <h3>${course.id}</h3>
                         <span class="course-category">${course.category}</span>

@@ -308,8 +308,8 @@ body {
 /* Courses Grid */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -324,7 +324,12 @@ body {
 .extended-course-card{
   position: absolute;
   width: auto;
-  padding: 200px;
+  margin: 200px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
 }
 
 .course-card:hover {
