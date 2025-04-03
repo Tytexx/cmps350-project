@@ -26,6 +26,7 @@ async function userInput() {
     }
 
     alert(`Login Successful \nWelcome ${user.username}`);
+    window.location.href = "home.html";
   });
 }
 
