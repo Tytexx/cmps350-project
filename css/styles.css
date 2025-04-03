@@ -390,6 +390,10 @@ body {
   padding: 1rem;
 }
 
+.register-button{
+  cursor: pointer;
+}
+
 /* Pagination */
 .pagination {
   display: flex;

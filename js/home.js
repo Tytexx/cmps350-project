@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",fetchData)
 const courseGrid = document.querySelector(".courses-grid")
 
 async function fetchData(){
-    const courses = await fetch("../data/courses.json");
+    const courses = await fetch("../data/courses2.json");
     let courseList = await courses.json();
     localStorage.courses = JSON.stringify(courseList)
     start()
@@ -46,25 +46,25 @@ async function start(){
                         <h4>${course.name}</h4>
                         <p>${course.description}</p>
                         <div class="course-details">
-                            <span><i class="fas fa-user"></i> ${course.instructor}</span>
-                            <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
+                            <span><i class="fas fa-user"></i> Instructors : ${course.sections.reduce((sum,section) => sum + 1, 0)}</span>
+                            <span><i class="fas fa-users"></i> Total Enrolled :  ${course.sections.reduce((sum,section) => sum + section.enrolled, 0)}</span>
                         </div>
                         <div class="course-details">
-                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'}</span>
+                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration : Open' : 'Registration : Closed'}</span>
                         </div>
                         
                     </div>
                     <div class="course-footer">
-                        <button onclick='showDiv(${JSON.stringify(course)})'
+                        <button onclick='viewDetails(${JSON.stringify(course)})'
                         class="btn btn-secondary">View Details</button>
-                        <button onclick='register(${JSON.stringify(course)})' class="btn btn-primary">Register</button>
+                        <button onclick='viewClasses(${JSON.stringify(course)})' class="btn btn-primary">View Classes</button>
                     </div>
                 </div>`
             )      
                           
 }
 
-function showDiv(course){
+function viewDetails(course){
     // Show details won't work for now because the course names are too
     courseGrid.style.display = "flex";
     courseGrid.style.flexDirection = "column";
@@ -81,8 +81,8 @@ function showDiv(course){
                         <!-- <p>${course.extraDescription}</p> -->
 
                         <div class="course-details">
-                            <span><i class="fas fa-user"></i> ${course.instructor}</span>
-                            <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
+                            <span><i class="fas fa-user"></i> Instructors :  ${course.sections.reduce((sum,section) => sum + 1, 0)}</span>
+                            <span><i class="fas fa-users"></i> Total Enrolled :  ${course.sections.reduce((sum,section) => sum + section.enrolled, 0)}</span>
                         </div>
                         <div class="course-details">
                             <span><i class="fas fa-hourglass-start"></i> Credit : ${course.credits}</span>
@@ -93,41 +93,80 @@ function showDiv(course){
                 `
 }
 
-function register(course){
-        // Register won't work for now because the course names are too
-    console.log("Working");
-    courseGrid.style.display = "flex";
-    courseGrid.style.flexDirection = "column";
-    courseGrid.style.gap = "20rem"
-    courseGrid.innerHTML = `
-                <div class="extended-course-card">
+async function viewClasses(course){
+    console.log(course);
+    
+    courseGrid.innerHTML = ''
+    course.sections.forEach(section => courseGrid.innerHTML += `
+                    <div class="course-card">
                     <div class="course-header">
-                        <h3>${course.code}dsadsad</h3>
+                        <h3>${course.name} - L${section.crn}</h3>
                         <span class="course-category">${course.category}</span>
                     </div>
                     <div class="course-content">
                         <h4>${course.name}</h4>
                         <p>${course.description}</p>
-                        <!-- <p>${course.extraDescription}</p> -->
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> ${section.instructor}</span>
+                            <span><i class="fas fa-users"></i> ${section.enrolled}/30</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration : Open' : 'Registration : Closed'}</span>
+                        </div>
+                        
+                    </div>
+                    <div style="display: flex; justify-content: center;" class="course-footer">
+                        <button onclick='registerSection(${JSON.stringify(course)}, ${JSON.stringify(section)})' class="btn btn-primary">View Section</button>
+                    </div>
+                </div>`
+            )                             
+}
 
-                        <div class="course-details">
-                            <span><i class="fas fa-user"></i> ${course.instructor}</span>
-                            <span><i class="fas fa-users"></i> ${course.enrolled}/30</span>
-                        </div>
-                        <div class="course-details">
-                            <span><i class="fas fa-hourglass-start"></i> Credit : ${course.credits}</span>
-                            <span><i class="fas fa-book-open"></i> Pre-requisites :  ${course.prerequisites.length != 0? course.prerequisites : "None"}</span>
-                        </div>
-                    </div>
-                    <div class="register-course-footer">
-                        <button class="btn btn-primary">Register</button>
-                    </div>
-                </div>
-                <div class="course-card">
+
+function registerSection(course,section){
+        // Register won't work for now because the course names are too
+    console.log("Working");
+    courseGrid.style.display = "flex";
+    console.log(section);
+    
+    courseGrid.style.flexDirection = "column";
+
+    courseGrid.style.gap = "0.5rem"
+    courseGrid.innerHTML = `
+<div class="course-card">
                     <div class="course-header">
-                        <button>Hey</button>
+                        <h3>${course.name} - L${section.crn}</h3>
+                        <span class="course-category">${course.category}</span>
+                    </div>
+                    <div class="course-content">
+                        <h4>${course.name}</h4>
+                        <p>${course.description}</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-user"></i> ${section.instructor}</span>
+                            <span><i class="fas fa-users"></i> ${section.enrolled}/30</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration : Open' : 'Registration : Closed'}</span>
+                        </div>
+                        
                     </div>
                 </div>
+
+                 <!-- <div class="extended-course-card">
+                    <div class="course-content">
+                        <h4>Requirements</h4>
+                        <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.prerequisites.length != 0? course.prerequisites : "None"} <br>
+                        <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
+                        <i class="fa-solid fa-xmark"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
+                </div> -->
+                </div>
+                <button class="course-card">
+                    <div class="register-button" onclick="" class="course-header" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 50px;">
+                        Register 
+                    </div>
+                </button>
+                
+
                 `
     
 }
