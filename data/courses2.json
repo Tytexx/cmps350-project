@@ -24,7 +24,7 @@
           "schedule": "Tue/Thu 11:00 AM-12:15 PM",
           "location": "Building 3, Room 105",
           "enrolled": 20,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         },
         {
@@ -33,7 +33,7 @@
           "schedule": "Wed/Fri 2:00-3:15 PM",
           "location": "Building 2, Room 310",
           "enrolled": 18,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -63,7 +63,7 @@
           "schedule": "Tue/Thu 1:00-2:15 PM",
           "location": "Building 1, Room 205",
           "enrolled": 12,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -93,7 +93,7 @@
           "schedule": "Tue/Thu 9:30-10:45 AM",
           "location": "Building 3, Room 208",
           "enrolled": 18,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -114,7 +114,7 @@
           "schedule": "Mon/Wed 1:00-2:15 PM",
           "location": "Building 2, Room 105",
           "enrolled": 20,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         },
         {
@@ -123,7 +123,7 @@
           "schedule": "Tue/Thu 3:00-4:15 PM",
           "location": "Building 4, Room 302",
           "enrolled": 15,
-          "capacity": 20,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -144,7 +144,7 @@
           "schedule": "Wed/Fri 11:00 AM-12:15 PM",
           "location": "Building 1, Room 107",
           "enrolled": 10,
-          "capacity": 20,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -165,7 +165,7 @@
           "schedule": "Mon/Wed 2:30-3:45 PM",
           "location": "Building 3, Room 210",
           "enrolled": 30,
-          "capacity": 35,
+          "capacity": 30,
           "status": "open"
         },
         {
@@ -195,7 +195,7 @@
           "schedule": "Mon/Wed/Fri 10:00-10:50 AM",
           "location": "Building 2, Room 201",
           "enrolled": 14,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -237,7 +237,7 @@
           "schedule": "Wed/Fri 1:00-2:15 PM",
           "location": "Building 1, Room 303",
           "enrolled": 17,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -300,7 +300,7 @@
           "schedule": "Mon/Wed 3:00-4:15 PM",
           "location": "Building 2, Room 107",
           "enrolled": 16,
-          "capacity": 20,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -321,7 +321,7 @@
           "schedule": "Tue/Thu 4:30-5:45 PM",
           "location": "Building 4, Room 308",
           "enrolled": 30,
-          "capacity": 35,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -384,7 +384,7 @@
           "schedule": "Tue/Thu 1:30-2:45 PM",
           "location": "Building 5, Room 306",
           "enrolled": 22,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -405,7 +405,7 @@
           "schedule": "Mon/Wed 5:30-6:45 PM",
           "location": "Building 2, Room 205",
           "enrolled": 20,
-          "capacity": 25,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -447,7 +447,7 @@
           "schedule": "Fri 1:00-3:30 PM",
           "location": "Building 1, Lab 402",
           "enrolled": 18,
-          "capacity": 20,
+          "capacity": 30,
           "status": "open"
         }
       ]
@@ -468,7 +468,7 @@
           "schedule": "Mon 6:00-8:30 PM",
           "location": "Building 3, Room 209",
           "enrolled": 30,
-          "capacity": 35,
+          "capacity": 30,
           "status": "open"
         }
       ]

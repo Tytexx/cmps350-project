@@ -124,49 +124,61 @@ async function viewClasses(course){
 
 
 function registerSection(course,section){
-        // Register won't work for now because the course names are too
-    console.log("Working");
-    courseGrid.style.display = "flex";
-    console.log(section);
-    
-    courseGrid.style.flexDirection = "column";
+    // Register won't work for now because the course names are too
+console.log("Working");
+courseGrid.style.display = "flex";
+console.log(section);
 
-    courseGrid.style.gap = "0.5rem"
-    courseGrid.innerHTML = `
+courseGrid.style.flexDirection = "column";
+
+courseGrid.style.gap = "0.5rem"
+courseGrid.innerHTML = `
 <div class="course-card">
-                    <div class="course-header">
-                        <h3>${course.name} - L${section.crn}</h3>
-                        <span class="course-category">${course.category}</span>
-                    </div>
-                    <div class="course-content">
-                        <h4>${course.name}</h4>
-                        <p>${course.description}</p>
-                        <div class="course-details">
-                            <span><i class="fas fa-user"></i> ${section.instructor}</span>
-                            <span><i class="fas fa-users"></i> ${section.enrolled}/30</span>
-                        </div>
-                        <div class="course-details">
-                            <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration : Open' : 'Registration : Closed'}</span>
-                        </div>
-                        
-                    </div>
+                <div class="course-header">
+                    <h3>${course.name} - L${section.crn}</h3>
+                    <span class="course-category">${course.category}</span>
                 </div>
-
-                 <!-- <div class="extended-course-card">
-                    <div class="course-content">
-                        <h4>Requirements</h4>
-                        <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.prerequisites.length != 0? course.prerequisites : "None"} <br>
-                        <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
-                        <i class="fa-solid fa-xmark"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
-                </div> -->
-                </div>
-                <button class="course-card">
-                    <div class="register-button" onclick="" class="course-header" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 50px;">
-                        Register 
+                <div class="course-content">
+                    <h4>${course.name}</h4>
+                    <p>${course.description}</p>
+                    <div class="course-details">
+                        <span><i class="fas fa-user"></i> ${section.instructor}</span>
+                        <span><i class="fas fa-users"></i> ${section.enrolled}/30</span>
                     </div>
-                </button>
-                
+                    <div class="course-details">
+                        <span><i class="fas fa-clock"></i> ${course.registrationOpen ? 'Registration : Open' : 'Registration : Closed'}</span>
+                    </div>
+                    
+                </div>
+            </div>
 
-                `
-    
+             <!-- <div class="extended-course-card">
+                <div class="course-content">
+                    <h4>Requirements</h4>
+                    <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.prerequisites.length != 0? course.prerequisites : "None"} <br>
+                    <i class="fa-solid fa-check"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
+                    <i class="fa-solid fa-xmark"></i> Pre-Requisites : ${course.registrationOpen ? 'Registration Open' : 'Registration Closed'} <br>
+            </div> -->
+            </div>
+            <button onclick='register(${JSON.stringify(course)}, ${JSON.stringify(section)})' class="course-card">
+                <div class="register-button" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 50px;">
+                    Register 
+                </div>
+            </button>
+
+            `
+}
+
+function register(course,section){
+
+    console.log(section.enrolled);
+    console.log(section.capacity);
+
+    if(section.enrolled != section.capacity){
+        alert("Successfully Registered");
+    }
+    else{
+        alert("Unable to register, section is full");
+    }
+
 }
