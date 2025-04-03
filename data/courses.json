@@ -7,7 +7,7 @@
       "category": "Programming",
       "prerequisites": [],
       "description": "Introduction to programming concepts and fundamentals",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "John Smith",
       "enrolled": 24
@@ -20,7 +20,7 @@
       "category": "Programming",
       "prerequisites": ["CMPS151"],
       "description": "Fundamentals of object-oriented programming paradigm",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Ahmed Al-Mansoori",
       "enrolled": 28
@@ -33,7 +33,7 @@
       "category": "Ethics",
       "prerequisites": [],
       "description": "Ethical issues related to computer usage and IT profession",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Sarah Johnson",
       "enrolled": 18
@@ -46,7 +46,7 @@
       "category": "Mathematics",
       "prerequisites": ["MATH101"],
       "description": "Mathematical structures for computer science",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Khalid Al-Hamad",
       "enrolled": 22
@@ -59,7 +59,7 @@
       "category": "Programming",
       "prerequisites": ["CMPS251", "CMPS205"],
       "description": "Implementation and application of fundamental data structures",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Michael Brown",
       "enrolled": 26
@@ -72,7 +72,7 @@
       "category": "Management",
       "prerequisites": [],
       "description": "Basic principles of project management and entrepreneurship in IT",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Noora Al-Thani",
       "enrolled": 20
@@ -85,7 +85,7 @@
       "category": "Software Development",
       "prerequisites": ["CMPS303"],
       "description": "Software development methodologies and practices",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "James Wilson",
       "enrolled": 25
@@ -98,7 +98,7 @@
       "category": "Programming",
       "prerequisites": ["CMPS303"],
       "description": "Algorithm design paradigms and complexity analysis",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Abdullah Al-Khalifa",
       "enrolled": 23
@@ -111,7 +111,7 @@
       "category": "Web Development",
       "prerequisites": ["CMPS251"],
       "description": "Principles and technologies of web application development",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Emily Davis",
       "enrolled": 27
@@ -124,7 +124,7 @@
       "category": "Databases",
       "prerequisites": ["CMPS251"],
       "description": "Database design, implementation and management",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Mohammed Al-Sada",
       "enrolled": 24
@@ -137,7 +137,7 @@
       "category": "Security",
       "prerequisites": ["CMPS303"],
       "description": "Introduction to computer and network security principles",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Thomas Anderson",
       "enrolled": 19
@@ -150,7 +150,7 @@
       "category": "Systems",
       "prerequisites": ["CMPS303", "CMPE263"],
       "description": "Design and implementation of operating systems",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Fatima Al-Nuaimi",
       "enrolled": 21
@@ -164,7 +164,7 @@
       "prerequisites": ["CMPS310"],
       "additionalRequirements": "Must complete min 84 credit hours and either CMPS350 or CMPS405",
       "description": "First part of the capstone project",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Richard Taylor",
       "enrolled": 15
@@ -177,7 +177,7 @@
       "category": "Project",
       "prerequisites": ["CMPS493"],
       "description": "Continuation and completion of the capstone project",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Mariam Al-Kuwari",
       "enrolled": 15
@@ -190,7 +190,7 @@
       "category": "Hardware",
       "prerequisites": ["CMPS251"],
       "description": "Fundamentals of computer organization and architecture",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Paul Miller",
       "enrolled": 20
@@ -203,7 +203,7 @@
       "category": "Networking",
       "prerequisites": ["CMPS303"],
       "description": "Principles of data communications and computer networks",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Ali Al-Sulaiti",
       "enrolled": 22
@@ -216,7 +216,7 @@
       "category": "Mathematics",
       "prerequisites": [],
       "description": "Limits, derivatives, integrals and applications",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Jennifer Lee",
       "enrolled": 30
@@ -229,7 +229,7 @@
       "category": "Mathematics",
       "prerequisites": ["MATH101"],
       "description": "Techniques of integration, infinite series, and applications",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Ibrahim Al-Emadi",
       "enrolled": 28
@@ -242,7 +242,7 @@
       "category": "Mathematics",
       "prerequisites": ["MATH101"],
       "description": "Vector spaces, linear transformations, matrices, and systems of equations",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Daniel White",
       "enrolled": 25
@@ -255,7 +255,7 @@
       "category": "Mathematics",
       "prerequisites": ["MATH102"],
       "description": "Probability theory and statistical methods for engineering",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Aisha Al-Thani",
       "enrolled": 23
@@ -268,7 +268,7 @@
       "category": "Mathematics",
       "prerequisites": ["MATH231", "CMPS151"],
       "description": "Numerical techniques for solving engineering problems",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Christopher Harris",
       "enrolled": 20
@@ -281,7 +281,7 @@
       "category": "Physics",
       "prerequisites": [],
       "description": "Mechanics, thermodynamics, and waves for engineering students",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Yousef Al-Mohannadi",
       "enrolled": 29
@@ -295,7 +295,7 @@
       "prerequisites": [],
       "corequisites": ["PHYS191"],
       "description": "Laboratory experiments in mechanics and thermodynamics",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Elizabeth Taylor",
       "enrolled": 28
@@ -308,7 +308,7 @@
       "category": "Physics",
       "prerequisites": ["PHYS191"],
       "description": "Electricity, magnetism, and optics for engineering students",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Hamad Al-Naimi",
       "enrolled": 26
@@ -322,7 +322,7 @@
       "prerequisites": ["PHYS192"],
       "corequisites": ["PHYS193"],
       "description": "Laboratory experiments in electricity, magnetism, and optics",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Sophia Clark",
       "enrolled": 25
@@ -335,7 +335,7 @@
       "category": "Chemistry",
       "prerequisites": [],
       "description": "Basic principles of chemistry for engineering students",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Nasser Al-Remaihi",
       "enrolled": 27
@@ -349,7 +349,7 @@
       "prerequisites": [],
       "corequisites": ["CHEM101"],
       "description": "Laboratory experiments in general chemistry",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Amanda Roberts",
       "enrolled": 26
@@ -362,7 +362,7 @@
       "category": "Islamic Studies",
       "prerequisites": [],
       "description": "Fundamentals of Islamic culture and thought",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Khalifa Al-Malki",
       "enrolled": 30
@@ -375,7 +375,7 @@
       "category": "Arabic",
       "prerequisites": [],
       "description": "Arabic language skills and literature",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Sarah Johnson",
       "enrolled": 28
@@ -388,7 +388,7 @@
       "category": "English",
       "prerequisites": [],
       "description": "Advanced English language skills for academic purposes",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Fahad Al-Hajri",
       "enrolled": 30
@@ -401,7 +401,7 @@
       "category": "English",
       "prerequisites": ["ENGL202"],
       "description": "Advanced academic writing and communication skills",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Jessica Brown",
       "enrolled": 27
@@ -414,7 +414,7 @@
       "category": "History",
       "prerequisites": [],
       "description": "Comprehensive study of Qatar's history and development",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Abdulrahman Al-Thani",
       "enrolled": 25
@@ -427,7 +427,7 @@
       "category": "Management",
       "prerequisites": [],
       "description": "Introduction to management theories and practices",
-      "status": "open",
+      "status": "Open",
       "registrationOpen": true,
       "instructor": "Matthew Wilson",
       "enrolled": 22

@@ -1,8 +1,8 @@
 /* Global Styles */
 
-*{
+/* *{
   border: 1px solid black;
-}
+} */
 
 :root {
   --primary-color: #70193d; /* QU primary color (maroon) */
@@ -325,7 +325,6 @@ body {
   position: absolute;
   width: auto;
   padding: 200px;
-
 }
 
 .course-card:hover {
