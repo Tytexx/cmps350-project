@@ -127,6 +127,8 @@ function searchCourses() {
 
 function viewDetails(course) {
   // Show details won't work for now because the course names are too
+  const availableCourses = document.querySelector(".search-section");
+  availableCourses.style.display= "none"
   courseGrid.style.display = "flex";
   courseGrid.style.flexDirection = "column";
   courseGrid.style.gap = "20rem";
