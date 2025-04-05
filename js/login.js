@@ -5,7 +5,7 @@ async function userInput() {
   const loginForm = document.querySelector("#loginForm");
   const username = document.querySelector("#username");
   const password = document.querySelector("#password");
-  //const userType = document.querySelector("#userType");
+  const userType = document.querySelector("#userType");
 
   if (!loginForm) return;
 
@@ -16,7 +16,7 @@ async function userInput() {
 
     const enteredUsername = username.value.trim();
     const enteredPassword = password.value.trim();
-    //const selectedUserType = userType.value.trim();
+    const enteredUserType = userType.value.trim();
 
     const user = userData.find((user) => user.username === enteredUsername);
 
@@ -24,8 +24,14 @@ async function userInput() {
       alert("Incorrect Username or Password");
       return;
     }
+    if (user.role !== enteredUserType) {
+      alert("False User Type");
+      return;
+    }
 
-    alert(`Login Successful \nWelcome ${user.username}`);
+    alert(
+      `Login Successful \nWelcome ${user.role.toUpperCase()}, ${user.username}`
+    );
     window.location.href = "home.html";
   });
 }
