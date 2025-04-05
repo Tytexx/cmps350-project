@@ -10,30 +10,6 @@ async function fetchData() {
   start();
 }
 
-// function start(){
-//     const courseGrid = document.querySelector(".courses-grid")
-//     courseGrid.innerHTML = `
-//                     <div class="course-card">
-//                     <div class="course-header">
-//                         <h3>${code}</h3>
-//                         <span class="course-category">${category}</span>
-//                     </div>
-//                     <div class="course-content">
-//                         <h4>${name}</h4>
-//                         <p>${description}</p>
-//                         <div class="course-details">
-//                             <span><i class="fas fa-user"></i>${description}</span>
-//                             <span><i class="fas fa-users"></i> 15/30 Enrolled</span>
-//                         </div>
-//                     </div>
-//                     <div class="course-footer">
-//                         <button class="btn btn-secondary">View Details</button>
-//                         <button class="btn btn-primary">Register</button>
-//                     </div>
-//                 </div>`
-
-// }
-
 async function start() {
   JSON.parse(localStorage.courses).forEach(
     (course) =>
