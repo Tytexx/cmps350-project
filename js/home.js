@@ -158,7 +158,8 @@ function viewDetails(course) {
 
 async function viewClasses(course) {
   console.log(course);
-
+  const availableCourses = document.querySelector(".search-section");
+  availableCourses.style.display= "none"
   courseGrid.innerHTML = "";
   course.sections.forEach(
     (section) =>
