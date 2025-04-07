@@ -7,6 +7,11 @@ async function fetchData() {
   const courses = await fetch("../data/courses2.json");
   let courseList = await courses.json();
   localStorage.courses = JSON.stringify(courseList);
+
+  const students = await fetch("../data/students.json");
+  let studentList = await students.json();
+  localStorage.students = JSON.stringify(studentList)
+
   start();
 }
 
@@ -243,4 +248,6 @@ function register(course, section) {
   } else {
     alert("Unable to register, section is full");
   }
+
+  //Have to push into courses.json (Increase of student) and students.json (Increase of course)
 }
