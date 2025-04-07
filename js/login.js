@@ -32,7 +32,9 @@ async function userInput() {
     alert(
       `Login Successful \nWelcome ${user.role.toUpperCase()}, ${user.username}`
     );
+    console.log(user.id);
     window.location.href = "home.html";
+    localStorage.setItem("user",JSON.stringify(user.id))
   });
 }
 

@@ -31,8 +31,7 @@ async function start(){
 }
 
 async function loadProgramProgress(){
-    const completedCourses = JSON.parse(localStorage.studentList).map(student => student.courses).reduce((sum,course), sum + course, 0);
-    const completedCourse = "";
+    const completedCourses = JSON.parse(localStorage.studentList).flatMap(student => student.courses) .length;    const completedCourse = "";
 
     progressContainer.innerHTML = `<div class="stat-item">
 <span class="stat-label">Completed Courses:</span>
