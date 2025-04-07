@@ -36,15 +36,52 @@ async function fetchData(){
 
 async function start(){
     
-    JSON.parse(localStorage.courses).forEach(course => learningPathGrid.innerHTML += `
-                                <!-- Course begin here -->
-                                 <!-- Year 1 -->
-                                <div class="course-box">
-                                    ${course.code}
-                                </div>`)
-    loadProgramProgress()
+    const courses = JSON.parse(localStorage.courses)
 
-                          
+    //Comment from here
+    const students = JSON.parse(localStorage.students)
+    const student = students.find(student => String(student.id) == currentStudentId)
+    
+    const studentCourses = student.courses;
+    console.log(studentCourses);
+    
+    for(const course1 of courses){
+        const courseInStudent = studentCourses.find(course2 => course2.courseId === course1.id);
+
+        if(courseInStudent) {
+            console.log(course1);
+            
+            if(courseInStudent.status === "completed") {
+                learningPathGrid.innerHTML += `
+                    <div class="course-box completed-course">
+                        ${course1.code}
+                    </div>`;
+            } else {
+                learningPathGrid.innerHTML += `
+                    <div class="course-box progress-course">
+                        ${course1.code}
+                    </div>`;
+            }
+        }
+        else{
+            learningPathGrid.innerHTML += `
+            <div class="course-box pending-course">
+                ${course1.code}
+            </div>`;
+        }
+    }
+    
+    //Till Here
+
+
+
+    // courses.forEach(course => learningPathGrid.innerHTML += `
+    //                             <!-- Course begin here -->
+    //                              <!-- Year 1 -->
+    //                             <div class="course-box">
+    //                                 ${course.code}
+    //                             </div>`)
+    loadProgramProgress()
 }
 
 async function loadProgramProgress(){

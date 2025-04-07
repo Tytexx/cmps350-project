@@ -103,9 +103,17 @@
     border-radius: 10px;
     color: black;
 }
+.completed-course:hover{
+    background-color: #28a745
 
-.course-box:hover{
-    background-color: rgb(21, 169, 75);
+}
+
+.progress-course:hover{
+    background-color: #ffc107
+}
+
+.pending-course:hover{
+    background-color: #355c7d
 }
 
 .program-summary {
