@@ -13,6 +13,7 @@ async function fetchData(){
     const students = await fetch("../data/students.json");
     let studentList = await students.json();
     localStorage.students = JSON.stringify(studentList)
+    
     start()
 }
 
@@ -27,29 +28,33 @@ async function start(){
 
         `)
         loadProgramProgress()
+
                           
 }
 
 async function loadProgramProgress(){
-    const completedCourses = JSON.parse(localStorage.studentList).flatMap(student => student.courses) .length;    const completedCourse = "";
+        const currentStudentId = JSON.parse(localStorage.getItem("user"))
 
-    progressContainer.innerHTML = `<div class="stat-item">
-<span class="stat-label">Completed Courses:</span>
-<span class="stat-value" id="completed-courses">9/20</span>
-</div>
-<div class="stat-item">
-<span class="stat-label">Credits Earned:</span>
-<span class="stat-value" id="credits-earned">36/100</span>
-</div>
-<div class="stat-item">
-<span class="stat-label">Current GPA:</span>
-<span class="stat-value" id="current-gpa">3.75</span>
-</div>`
-    
+        const studentList = JSON.parse(localStorage.students)            
+        const student = studentList.find(student => String(student.id) == currentStudentId)
+        console.log(student);
 
-                          
+        const completedCourses = student.courses.filter(course => course.status == "completed").length
+        console.log(completedCourses);
+
+        progressContainer.innerHTML = `<div class="stat-item">
+        <span class="stat-label">Completed Courses:</span>
+        <span class="stat-value" id="completed-courses">${completedCourses}/20</span>
+        </div>
+        <div class="stat-item">
+        <span class="stat-label">Credits Earned:</span>
+        <span class="stat-value" id="credits-earned">${completedCourses*3}/100</span>
+        </div>
+        <div class="stat-item">
+        <span class="stat-label">Current GPA:</span>
+        <span class="stat-value" id="current-gpa">${completedCourses*3}</span>
+        </div>`                    
 }
-{}
 // #28a745
 // #ffc107
 // #355c7d
