@@ -1,0 +1,19 @@
+{
+  "name": "cmps350-project",
+  "version": "1.0.0",
+  "description": "Project for cmps 350 by us",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdsherinoff/cmps350-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdsherinoff/cmps350-project/issues"
+  },
+  "homepage": "https://github.com/mdsherinoff/cmps350-project#readme"
+}
