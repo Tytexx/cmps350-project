@@ -23,7 +23,7 @@ const currentCoursesContainer = document.querySelector(".current-courses")
 
 
 async function fetchData(){
-    const courses = await fetch("../data/course.json");
+    const courses = await fetch("../data/courses.json");
     let courseList = await courses.json();
     localStorage.courses = JSON.stringify(courseList)
 

@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", fetchData);
 const courseGrid = document.querySelector(".courses-grid");
 
 async function fetchData() {
-  const courses = await fetch("../data/course.json");
+  const courses = await fetch("../data/courses.json");
   let courseList = await courses.json();
   localStorage.courses = JSON.stringify(courseList);
 
   const students = await fetch("../data/students.json");
   let studentList = await students.json();
-  localStorage.students = JSON.stringify(studentList)
+  localStorage.students = JSON.stringify(studentList);
 
   start();
 }
@@ -133,7 +133,7 @@ function searchCourses() {
 function viewDetails(course) {
   // Show details won't work for now because the course names are too
   const availableCourses = document.querySelector(".search-section");
-  availableCourses.style.display= "none"
+  availableCourses.style.display = "none";
   courseGrid.style.display = "flex";
   courseGrid.style.flexDirection = "column";
   courseGrid.style.gap = "20rem";
@@ -164,7 +164,7 @@ function viewDetails(course) {
 async function viewClasses(course) {
   console.log(course);
   const availableCourses = document.querySelector(".search-section");
-  availableCourses.style.display= "none"
+  availableCourses.style.display = "none";
   courseGrid.innerHTML = "";
   course.sections.forEach(
     (section) =>
