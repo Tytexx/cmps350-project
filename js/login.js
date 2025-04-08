@@ -37,10 +37,13 @@ async function userInput() {
     switch(enteredUserType){
       case "student":
         window.location.href = "student-home.html";
+        return;
       case "instructor":
         window.location.href = "instructor-home.html";
+        return;
       case "administrator":
         window.location.href = "admin-home.html";
+        return;
     }
 
     localStorage.setItem("user",JSON.stringify(user.id))//rename this as userId since the whole user isnt pushed

@@ -1,5 +1,7 @@
 const BASE_URL = 'http://127.0.0.1:3000/cmps350-project/home.html'
 const currentStudentId = JSON.parse(localStorage.getItem("user"))
+console.log(currentStudentId);
+
 
 const gradePointDictionary = {
     "A": 4.0,
@@ -22,7 +24,9 @@ const progressContainer = document.querySelector(".progress-stats")
 const currentCoursesContainer = document.querySelector(".current-courses")
 const completedCoursesContainer = document.querySelector(".completed-courses")
 
+const logoutButton = document.querySelector(".btn-logout")
 
+logoutButton.addEventListener('click',logout)
 
 async function fetchData(){
     const courses = await fetch("../data/courses.json");
@@ -38,13 +42,12 @@ async function fetchData(){
 
 async function start(){
     
-    const courses = JSON.parse(localStorage.courses)
-
+    const courses = JSON.parse(localStorage.courses)    
     const students = JSON.parse(localStorage.students)
+    
     const student = students.find(student => String(student.id) == currentStudentId)
     
     const studentCourses = student.courses;
-    console.log(studentCourses);
     
     for(const course1 of courses){
         const courseInStudent = studentCourses.find(course2 => course2.courseId === course1.id);
@@ -101,7 +104,7 @@ async function loadProgramProgress(){
         </div>
         <div class="stat-item">
         <span class="stat-label">Current GPA:</span>
-        <span class="stat-value" id="current-gpa">${gradePoints/completedCourses.length}</span>
+        <span class="stat-value" id="current-gpa">${(gradePoints/completedCourses.length).toFixed(2)}</span>
         </div>`  
         
         const currentCourses = student.courses.filter(course => course.status == "current")
@@ -140,7 +143,10 @@ async function loadProgramProgress(){
         }
 
         
-
+function logout(){
+    window.location.href = "login.html";
+    localStorage.clear
+}
 
     
 
