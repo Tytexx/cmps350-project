@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", fetchData);
 const courseGrid = document.querySelector(".courses-grid");
 
 async function fetchData() {
-  const courses = await fetch("../data/courses2.json");
+  const courses = await fetch("../data/course.json");
   let courseList = await courses.json();
   localStorage.courses = JSON.stringify(courseList);
 
