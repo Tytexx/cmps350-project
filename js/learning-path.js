@@ -21,8 +21,12 @@ const gradePointDictionary = {
 document.addEventListener("DOMContentLoaded",fetchData)
 const learningPathGrid = document.querySelector(".course-path-grid")
 const progressContainer = document.querySelector(".progress-stats")
+
 const currentCoursesContainer = document.querySelector(".current-courses")
 const completedCoursesContainer = document.querySelector(".completed-courses")
+const pendingCoursesContainer = document.querySelector(".pending-courses")
+
+
 
 const logoutButton = document.querySelector(".btn-logout")
 
@@ -44,9 +48,11 @@ async function start(){
     
     const courses = JSON.parse(localStorage.courses)    
     const students = JSON.parse(localStorage.students)
+    console.log(courses);
     
     const student = students.find(student => String(student.id) == currentStudentId)
-    
+    console.log(student);
+
     const studentCourses = student.courses;
     
     for(const course1 of courses){
@@ -83,7 +89,9 @@ async function loadProgramProgress(){
         const student = studentList.find(student => String(student.id) == currentStudentId)
         console.log(student);
 
+        const currentCourses = student.courses.filter(course => course.status == "current")
         const completedCourses = student.courses.filter(course => course.status == "completed")
+
         const grades = completedCourses.map(course => course.grade)
         let gradePoints = 0;
 
@@ -107,7 +115,6 @@ async function loadProgramProgress(){
         <span class="stat-value" id="current-gpa">${(gradePoints/completedCourses.length).toFixed(2)}</span>
         </div>`  
         
-        const currentCourses = student.courses.filter(course => course.status == "current")
         
         console.log(currentCourses);
         const courseList = JSON.parse(localStorage.courses)
@@ -140,6 +147,22 @@ async function loadProgramProgress(){
                         }
                     }
                 }
+
+            for(course1 of courseList){
+                for(course2 of completedCourses)
+                {
+                    if(course1.id == course2.courseId){
+                        pendingCoursesContainer.innerHTML += `
+                        <div class="semester-course">
+                        <span class="course-code">${course1.code}</span>
+                        <span class="course-name">${course1.name}</span>
+                        <span class="course-status completed">${course2.grade}</span>
+                        </div>`
+                        }
+                    }
+                }
+        
+            
         }
 
         

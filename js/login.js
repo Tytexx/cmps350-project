@@ -33,6 +33,8 @@ async function userInput() {
       `Login Successful \nWelcome ${user.role.toUpperCase()}, ${user.username}`
     );
     console.log(user.id);
+    localStorage.setItem("user",JSON.stringify(user.id))//rename this as userId since the whole user isnt pushed 
+
 
     switch(enteredUserType){
       case "student":
@@ -44,9 +46,7 @@ async function userInput() {
       case "administrator":
         window.location.href = "admin-home.html";
         return;
-    }
-
-    localStorage.setItem("user",JSON.stringify(user.id))//rename this as userId since the whole user isnt pushed
+    }    
   });
 }
 

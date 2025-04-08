@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", fetchData);
 const courseGrid = document.querySelector(".courses-grid");
 const logoutButton = document.querySelector(".btn-logout")
 
+const currentStudentId = JSON.parse(localStorage.getItem("user"))
+console.log(currentStudentId);
+
 logoutButton.addEventListener('click',logout)
 
 async function fetchData() {
