@@ -1,0 +1,20 @@
+[
+    {
+      "id": "2001",
+      "name": "Ameen Mansour",
+      "department": "Computer Science",
+      "sections": [
+        {
+          "courseId": "c001",
+          "crn": "10001",
+          "semester": "Spring 2024"
+        },
+        {
+          "courseId": "c002",
+          "crn": "10005",
+          "semester": "Spring 2024"
+        }
+      ]
+    }
+
+  ]
