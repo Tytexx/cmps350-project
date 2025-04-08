@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded",fetchData)
 const learningPathGrid = document.querySelector(".course-path-grid")
 const progressContainer = document.querySelector(".progress-stats")
 const currentCoursesContainer = document.querySelector(".current-courses")
+const completedCoursesContainer = document.querySelector(".completed-courses")
+
 
 
 async function fetchData(){
@@ -38,7 +40,6 @@ async function start(){
     
     const courses = JSON.parse(localStorage.courses)
 
-    //Comment from here
     const students = JSON.parse(localStorage.students)
     const student = students.find(student => String(student.id) == currentStudentId)
     
@@ -70,17 +71,6 @@ async function start(){
             </div>`;
         }
     }
-    
-    //Till Here
-
-
-
-    // courses.forEach(course => learningPathGrid.innerHTML += `
-    //                             <!-- Course begin here -->
-    //                              <!-- Year 1 -->
-    //                             <div class="course-box">
-    //                                 ${course.code}
-    //                             </div>`)
     loadProgramProgress()
 }
 
@@ -133,7 +123,23 @@ async function loadProgramProgress(){
                     }
                 }
             }
+
+            for(course1 of courseList){
+                for(course2 of completedCourses)
+                {
+                    if(course1.id == course2.courseId){
+                        completedCoursesContainer.innerHTML += `
+                        <div class="semester-course">
+                        <span class="course-code">${course1.code}</span>
+                        <span class="course-name">${course1.name}</span>
+                        <span class="course-status completed">${course2.grade}</span>
+                        </div>`
+                        }
+                    }
+                }
         }
+
+        
 
 
     
