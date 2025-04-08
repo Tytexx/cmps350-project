@@ -33,8 +33,17 @@ async function userInput() {
       `Login Successful \nWelcome ${user.role.toUpperCase()}, ${user.username}`
     );
     console.log(user.id);
-    window.location.href = "home.html";
-    localStorage.setItem("user",JSON.stringify(user.id))
+
+    switch(enteredUserType){
+      case "student":
+        window.location.href = "student-home.html";
+      case "instructor":
+        window.location.href = "instructor-home.html";
+      case "administrator":
+        window.location.href = "admin-home.html";
+    }
+
+    localStorage.setItem("user",JSON.stringify(user.id))//rename this as userId since the whole user isnt pushed
   });
 }
 
